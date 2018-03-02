@@ -18,6 +18,11 @@ Rails.application.routes.draw do
 
   resources :home, :only => [:index]
 
+  namespace :api, defaults: { format: :json } do
+    resources :groups, :only => [:index]
+    resources :services, :only => [:show]
+  end
+
   namespace :admin do
     resources :index, :only => [:index]
   end

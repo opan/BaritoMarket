@@ -10,6 +10,7 @@ gem 'puma', '~> 3.7'
 gem 'turbolinks', '~> 5'
 gem 'jbuilder', '~> 2.5'
 gem 'figaro'
+gem 'rack-cors'
 
 gem 'devise'
 gem 'devise_cas_authenticatable'
